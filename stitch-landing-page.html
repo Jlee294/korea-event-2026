@@ -1,0 +1,438 @@
+<!DOCTYPE html><html class="light" lang="ko"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#eceef0",
+                        "on-surface": "#191c1e",
+                        "on-tertiary-fixed": "#20005f",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#e8deff",
+                        "on-primary-fixed": "#001944",
+                        "tertiary-fixed-dim": "#cdbdff",
+                        "secondary-fixed-dim": "#ffb2be",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#9fbaff",
+                        "surface-variant": "#e0e3e5",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eff1f3",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed-variant": "#4f00d0",
+                        "surface-dim": "#d8dadc",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed-variant": "#1a438e",
+                        "on-primary": "#ffffff",
+                        "secondary": "#b80049",
+                        "on-secondary-fixed": "#400014",
+                        "primary-container": "#204893",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed": "#d9e2ff",
+                        "on-secondary-container": "#fffbff",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#003176",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c5d5",
+                        "secondary-container": "#e2165f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#c3b0ff",
+                        "surface": "#f7f9fb",
+                        "on-surface-variant": "#444653",
+                        "on-secondary-fixed-variant": "#900038",
+                        "on-background": "#191c1e",
+                        "inverse-primary": "#b0c6ff",
+                        "secondary-fixed": "#ffd9de",
+                        "outline": "#757684",
+                        "tertiary-container": "#540cd7",
+                        "inverse-surface": "#2d3133",
+                        "tertiary": "#3b00a1",
+                        "surface-tint": "#375ca7",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#b0c6ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f7f9fb; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); }
+        .text-gradient-primary { background: linear-gradient(45deg, #003176, #204893); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-gradient-overlay { background: linear-gradient(135deg, rgba(0, 49, 118, 0.85) 0%, rgba(184, 0, 73, 0.4) 100%); }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.order-first{order:-9999}.mx-auto{margin-left:auto;margin-right:auto}.-mb-16{margin-bottom:-4rem}.-ml-16{margin-left:-4rem}.-mr-16{margin-right:-4rem}.-mt-16{margin-top:-4rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-32{height:8rem}.h-48{height:12rem}.h-8{height:2rem}.h-full{height:100%}.min-h-\[1024px\]{min-height:1024px}.w-1\/3{width:33.333333%}.w-12{width:3rem}.w-14{width:3.5rem}.w-24{width:6rem}.w-32{width:8rem}.w-8{width:2rem}.w-\[75\%\]{width:75%}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-screen-2xl{max-width:1536px}.flex-shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2\.5rem\]{border-radius:2.5rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-full{border-radius:0.75rem}.rounded-xl{border-radius:0.5rem}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-b-4{border-bottom-width:4px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-\[\#b80049\]{--tw-border-opacity:1;border-color:rgb(184 0 73 / var(--tw-border-opacity, 1))}.border-outline-variant\/10{border-color:rgb(196 197 213 / 0.1)}.border-outline-variant\/20{border-color:rgb(196 197 213 / 0.2)}.border-primary{--tw-border-opacity:1;border-color:rgb(0 49 118 / var(--tw-border-opacity, 1))}.border-primary-container{--tw-border-opacity:1;border-color:rgb(32 72 147 / var(--tw-border-opacity, 1))}.border-secondary{--tw-border-opacity:1;border-color:rgb(184 0 73 / var(--tw-border-opacity, 1))}.border-tertiary{--tw-border-opacity:1;border-color:rgb(59 0 161 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-\[\#f7f9fb\]{--tw-bg-opacity:1;background-color:rgb(247 249 251 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 49 118 / var(--tw-bg-opacity, 1))}.bg-primary-container\/10{background-color:rgb(32 72 147 / 0.1)}.bg-primary\/10{background-color:rgb(0 49 118 / 0.1)}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(184 0 73 / var(--tw-bg-opacity, 1))}.bg-secondary\/10{background-color:rgb(184 0 73 / 0.1)}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(236 238 240 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(230 232 234 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(242 244 246 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-tertiary{--tw-bg-opacity:1;background-color:rgb(59 0 161 / var(--tw-bg-opacity, 1))}.bg-tertiary\/10{background-color:rgb(59 0 161 / 0.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/70{background-color:rgb(255 255 255 / 0.7)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-primary{--tw-gradient-from:#003176 var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 49 118 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-primary-container{--tw-gradient-to:#204893 var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:0.25rem}.pt-20{padding-top:5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-\[\'Manrope\'\]{font-family:'Manrope'}.font-\[\'Plus_Jakarta_Sans\'\]{font-family:'Plus Jakarta Sans'}.font-body{font-family:Plus Jakarta Sans}.font-headline{font-family:Manrope}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[\#003176\]{--tw-text-opacity:1;color:rgb(0 49 118 / var(--tw-text-opacity, 1))}.text-\[\#191c1e\]{--tw-text-opacity:1;color:rgb(25 28 30 / var(--tw-text-opacity, 1))}.text-\[\#b80049\]{--tw-text-opacity:1;color:rgb(184 0 73 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(25 28 30 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(68 70 83 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(0 49 118 / var(--tw-text-opacity, 1))}.text-primary-container{--tw-text-opacity:1;color:rgb(32 72 147 / var(--tw-text-opacity, 1))}.text-primary-container\/20{color:rgb(32 72 147 / 0.2)}.text-primary\/20{color:rgb(0 49 118 / 0.2)}.text-secondary{--tw-text-opacity:1;color:rgb(184 0 73 / var(--tw-text-opacity, 1))}.text-secondary-fixed{--tw-text-opacity:1;color:rgb(255 217 222 / var(--tw-text-opacity, 1))}.text-secondary\/20{color:rgb(184 0 73 / 0.2)}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-tertiary{--tw-text-opacity:1;color:rgb(59 0 161 / var(--tw-text-opacity, 1))}.text-tertiary-fixed-dim{--tw-text-opacity:1;color:rgb(205 189 255 / var(--tw-text-opacity, 1))}.text-tertiary\/20{color:rgb(59 0 161 / 0.2)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.opacity-10{opacity:0.1}.opacity-40{opacity:0.4}.opacity-80{opacity:0.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_1px_0_0_rgba\(0\2c 0\2c 0\2c 0\.05\)\]{--tw-shadow:0 1px 0 0 rgba(0,0,0,0.05);--tw-shadow-colored:0 1px 0 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-\[40px\]{--tw-backdrop-blur:blur(40px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-secondary:hover{--tw-border-opacity:1;border-color:rgb(184 0 73 / var(--tw-border-opacity, 1))}.hover\:bg-secondary-container:hover{--tw-bg-opacity:1;background-color:rgb(226 22 95 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-\[\#b80049\]:hover{--tw-text-opacity:1;color:rgb(184 0 73 / var(--tw-text-opacity, 1))}.hover\:opacity-90:hover{opacity:0.9}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-secondary\/20:hover{--tw-shadow-color:rgb(184 0 73 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-primary-container\/40{color:rgb(32 72 147 / 0.4)}.group:hover .group-hover\:text-primary\/40{color:rgb(0 49 118 / 0.4)}.group:hover .group-hover\:text-secondary\/40{color:rgb(184 0 73 / 0.4)}.group:hover .group-hover\:text-tertiary\/40{color:rgb(59 0 161 / 0.4)}.dark\:bg-\[\#001b40\]:is(.dark *){--tw-bg-opacity:1;background-color:rgb(0 27 64 / var(--tw-bg-opacity, 1))}.dark\:bg-\[\#003176\]\/70:is(.dark *){background-color:rgb(0 49 118 / 0.7)}.dark\:text-\[\#f7f9fb\]:is(.dark *){--tw-text-opacity:1;color:rgb(247 249 251 / var(--tw-text-opacity, 1))}.dark\:text-slate-300:is(.dark *){--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.dark\:text-slate-400:is(.dark *){--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:col-span-1{grid-column:span 1 / span 1}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:order-last{order:9999}.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:block{display:block}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-7xl{font-size:4.5rem;line-height:1}}</style></head>
+<body class="text-on-surface" data-mode="connect">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-[#003176]/70 backdrop-blur-[40px] shadow-[0_1px_0_0_rgba(0,0,0,0.05)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Clinical Radiance Logo" class="h-10 w-auto" data-alt="modern medical education logo with sleek minimalist geometric shapes in professional blue and magenta aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYLxv5wViogccUTRgc-QASRzjyW1gjmdOdk2-b_MRbC8ks2y54xfaYmb_XMqLtPAU82K7x-BZDZVWwPCit4OmJPFDIe4u1qDeUyEvAk7_4qAdF9Kh-M6Pcov4FfPpwoALEASvNiu3x-_M464l7DXgEWBSFAq-bKmZIEOKeDbW48jhRH5iu8Aiw0XLOMFp0JXWYBmQZwSFC9gwFefJvM2EXQuohxalXqPJrSFv6p6TKvgnO5YB9TY2IWjMEPukZCl_rz1XKJ9MlPnM">
+<span class="text-2xl font-black tracking-tighter text-[#003176] dark:text-white">K-Medical 2026&nbsp;</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Manrope'] font-bold tracking-tight text-sm uppercase text-[#b80049] border-b-2 border-[#b80049] pb-1" href="#">Program</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm uppercase text-[#191c1e] dark:text-slate-300 hover:text-[#b80049] transition-colors" href="#">Speakers</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm uppercase text-[#191c1e] dark:text-slate-300 hover:text-[#b80049] transition-colors" href="#">Venues</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm uppercase text-[#191c1e] dark:text-slate-300 hover:text-[#b80049] transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">language</span>
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition-all active:scale-95">Register</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[1024px] flex items-center pt-20 overflow-hidden" data-stitch-vh="min-h-[1024px]===min-h-screen">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="cinematic wide shot of N Seoul Tower and city skyline at twilight with deep blue and purple sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASJ8FoK62_gNdUoaNvpr8UKcqirXFzcLQNfMryw0elUAgrTXBYZSIPney2SOcsMzy-rerDPYuSTfPXb7WsmYZhhVi4IE1NpKveLDZzUXOi9PrSHn9kUWQIW_z36fMszJEP0wluNZA-l4bddAXimJiPb0nDx5PHIDHUtQ-MQaty6xrEvq34G08OQVMxoPZI6w9O_rm9zmhBr7as8vRzVXz_U4enPXX0Uh_E5tfl7fC_NhV2k-ebSmuh6EiR74EZEp5-tNBlSc_Q2r8">
+<div class="absolute inset-0 hero-gradient-overlay"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<div class="inline-block px-4 py-1 rounded-full bg-secondary text-white text-xs font-bold tracking-widest uppercase mb-6">
+                    Global KOL Partnership 2026
+                </div>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tighter mb-6">
+                    KSAPS-VSAPS 글로벌 KOL <br>교류 행사 &amp; K-Medical <br><span class="text-secondary-fixed">서머캠프 2026</span>
+</h1>
+<p class="font-body text-xl text-white/90 max-w-2xl leading-relaxed mb-10">
+                    한국 KOL 의료진의 고급 술기 및 국산 의료기기를 현지 의료진에게 전파하는 공식 파트너십 행사입니다.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-secondary-container transition-all hover:shadow-lg hover:shadow-secondary/20 active:scale-95">
+                        사전 등록하기
+                    </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all">
+                        프로그램 자세히 보기
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-4 hidden lg:block">
+<div class="glass-panel bg-white/10 border border-white/20 p-8 rounded-[2rem] shadow-2xl">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white">event_available</span>
+</div>
+<div>
+<div class="text-white/60 text-xs font-bold uppercase tracking-wider">Next Event</div>
+<div class="text-white font-bold">2026.08.28 Ho Chi Minh</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-white/5 border border-white/10">
+<div class="text-secondary-fixed text-sm font-bold mb-1">Registration Open</div>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[75%]"></div>
+</div>
+<div class="text-white/60 text-[10px] mt-2">75% of clinical seats reserved</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low relative">
+<div class="container mx-auto px-8">
+<div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="text-secondary font-bold tracking-widest text-sm uppercase">About Project</span>
+<h2 class="text-4xl lg:text-5xl font-black text-primary mt-2 leading-tight">
+                        실질적인 수출 성과 창출 및 <br>K-Medical Standard 구축
+                    </h2>
+</div>
+<div class="text-on-surface-variant font-body text-lg max-w-md">
+                    글로벌 교류를 통해 한국의 의료 기술 리더십을 확립하고, 검증된 국산 의료기기의 세계 시장 진출을 가속화합니다.
+                </div>
+</div>
+<!-- 4-Step Process Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group border-b-4 border-primary">
+<div class="text-primary/20 font-black text-5xl mb-6 group-hover:text-primary/40 transition-colors">01</div>
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">[강의] 이론적 신뢰</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">한국 최고의 KOL들이 전하는 최신 미용성형 지식과 이론적 기반 구축 (Trust).</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group border-b-4 border-secondary">
+<div class="text-secondary/20 font-black text-5xl mb-6 group-hover:text-secondary/40 transition-colors">02</div>
+<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">visibility</span>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">[데모] 시각적 증명</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">UHD 초고화질 실시간 중계를 통한 정교한 술기 시연 및 시각적 입증 (Visualizing).</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group border-b-4 border-tertiary">
+<div class="text-tertiary/20 font-black text-5xl mb-6 group-hover:text-tertiary/40 transition-colors">03</div>
+<div class="w-12 h-12 bg-tertiary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary">touch_app</span>
+</div>
+<h3 class="text-xl font-bold text-tertiary mb-3">[전시] 직접 확인</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">K-Innovation 전시관에서 장비의 성능과 디자인을 직접 확인하는 기회 (Touching).</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group border-b-4 border-primary-container">
+<div class="text-primary-container/20 font-black text-5xl mb-6 group-hover:text-primary-container/40 transition-colors">04</div>
+<div class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary-container">handshake</span>
+</div>
+<h3 class="text-xl font-bold text-primary-container mb-3">[핸즈온] 체득 구매</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">직접적인 장비 조작 경험을 통한 구매 전환 및 실질적 비즈니스 체결 (Closing).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Events Schedule -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black text-primary tracking-tight">Key Events Schedule</h2>
+<div class="w-24 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="space-y-12">
+<!-- Event 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<div class="lg:col-span-4 bg-primary rounded-[2.5rem] p-10 text-white flex flex-col justify-between overflow-hidden relative">
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+<div>
+<div class="text-secondary-fixed font-bold text-lg mb-2">Event 01</div>
+<h3 class="text-3xl font-black mb-6 leading-tight">VSAPS-KSAPS <br>서머캠프 + <br>미디어 컨퍼런스</h3>
+<div class="flex items-center gap-2 text-white/80 font-bold">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                2026.08.28 - 08.30
+                            </div>
+<div class="flex items-center gap-2 text-white/80 font-bold mt-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                Ho Chi Minh, Vietnam
+                            </div>
+</div>
+<img class="mt-8 rounded-2xl h-48 object-cover shadow-2xl" data-alt="vibrant street life of Ho Chi Minh city at night with neon lights and bustling energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC-_C19i4vVc6JJ0mvMfboeXB6gjwC0kiV-gzNo8iBuvA2vytUKhu53WcHZL1JIZUfF8oiUEpYjnUsJ0sx3q6zYPcorMXkS62x_QgabMlmn8NjI5lLZjOkqMRUkw6IVXwpJyzVFwpz8GM_uRjZ7JNC4D1ECZs8BvXACZ5TiZ9wPeM-Lg_6xumNrb_ky3D54BB_Pb0EuvPNilSH7LHPawYOcxcmbZpmN7mIKJZq6tpmt975pgoYo0bsjgU23eT9kDQfKRKFkZcl2jE">
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">mic</span>
+<h4 class="font-bold text-primary mb-2">미디어 컨퍼런스</h4>
+<p class="text-sm text-on-surface-variant">글로벌 미디어 대상 K-Medical 비전 선포 및 브랜드 강화</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">psychology</span>
+<h4 class="font-bold text-primary mb-2">고급 워크숍</h4>
+<p class="text-sm text-on-surface-variant">심도 있는 학술 토론 및 전문 술기 심화 교육 세션</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">precision_manufacturing</span>
+<h4 class="font-bold text-primary mb-2">핸즈온 세션</h4>
+<p class="text-sm text-on-surface-variant">현지 의료진이 직접 장비를 다뤄보는 실습 중심 프로그램</p>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<div class="lg:col-span-4 bg-tertiary rounded-[2.5rem] p-10 text-white flex flex-col justify-between overflow-hidden relative order-first lg:order-last">
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16"></div>
+<div>
+<div class="text-tertiary-fixed-dim font-bold text-lg mb-2">Event 02</div>
+<h3 class="text-3xl font-black mb-6 leading-tight">KSAPS-VSAPS <br>KOL 교류 행사</h3>
+<div class="flex items-center gap-2 text-white/80 font-bold">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                2026.10.30 - 11.01
+                            </div>
+<div class="flex items-center gap-2 text-white/80 font-bold mt-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                175 Military Hospital
+                            </div>
+</div>
+<img class="mt-8 rounded-2xl h-48 object-cover shadow-2xl" data-alt="modern medical hospital exterior with glass facade and professional clean architectural design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJRabiON26rKw2OdXfAqVau80YDIbIO-R4RCatqovB5prbccL_4OdPvink2Ps8T_guASBLf9cQYLDaVtMRdH-v1cwrBWGBxjIDORYNcEerG0mXCyljY1pnvmxwYepqTMs1E2RIJgl5sQwOMxp2XrJVf597MasMXlui67hr-yUWUtyZO97SizKac1tsGxIhNvIszKYf-CcJNgZe9fqCbQf4Venahc67IMGB6hu3XBKzXu2RCPd0WQZBaEgywf5zfPeAHFizlncXhds">
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex gap-6 items-start">
+<div class="w-14 h-14 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary">videocam</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Live Demo (UHD)</h4>
+<p class="text-sm text-on-surface-variant">초고해상도 실시간 중계를 통한 수술실 상황 생생 전달</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex gap-6 items-start">
+<div class="w-14 h-14 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary">hub</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">B2B Matching</h4>
+<p class="text-sm text-on-surface-variant">제조사와 현지 바이어 간의 1:1 비즈니스 상담 및 계약 지원</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex gap-6 items-start">
+<div class="w-14 h-14 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary">featured_play_list</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">K-Innovation Exhibition</h4>
+<p class="text-sm text-on-surface-variant">최첨단 의료기기 신제품 라인업 통합 전시</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex gap-6 items-start">
+<div class="w-14 h-14 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary">groups</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Academic Sessions</h4>
+<p class="text-sm text-on-surface-variant">전문가 그룹의 학술 교류 및 임상 사례 공유</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- K-Innovation Pavilion -->
+<section class="py-24 bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full text-primary fill-current" viewBox="0 0 100 100">
+<circle cx="100" cy="50" r="50"></circle>
+</svg>
+</div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="mb-16">
+<h2 class="text-4xl font-black text-primary mb-4">K-Innovation Pavilion</h2>
+<p class="text-on-surface-variant font-body">세계가 주목하는 대한민국 대표 의료기기 브랜드를 한자리에서 만나보십시오.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4">
+<!-- Brand Cards -->
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center gap-4 text-center border-t-2 border-transparent hover:border-secondary">
+<div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-black text-primary">Hironic</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-tighter">DOUBLO</span>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center gap-4 text-center border-t-2 border-transparent hover:border-secondary">
+<div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-black text-primary">Wontech</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-tighter">Oligio</span>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center gap-4 text-center border-t-2 border-transparent hover:border-secondary">
+<div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-black text-primary">NeoDoctor</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-tighter">JAMBER</span>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center gap-4 text-center border-t-2 border-transparent hover:border-secondary">
+<div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-black text-primary">AesthePharm</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-tighter">QTFILL</span>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center gap-4 text-center border-t-2 border-transparent hover:border-secondary">
+<div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-black text-primary">RoseLab</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-tighter">BIOSTER</span>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center gap-4 text-center border-t-2 border-transparent hover:border-secondary">
+<div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="text-xl font-black text-primary">Osstem</span>
+</div>
+<span class="text-xs font-bold text-secondary uppercase tracking-tighter">Pharma</span>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-primary p-8 rounded-3xl text-white">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined">desktop_windows</span>
+<h4 class="text-xl font-bold">K-Master Zone</h4>
+</div>
+<p class="text-sm text-white/70 mb-6">Digital Wall을 통해 브랜드 히스토리와 기술력을 한눈에 체험하는 미디어 갤러리 존입니다.</p>
+<img class="w-full h-32 object-cover rounded-xl opacity-80" data-alt="futuristic digital gallery with large screens displaying medical data and glowing blue light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiOCVkPZmUo48vQKVvibA3Cx0IDG1U0oZD4rfN5NMIzhchkfwtw3NtwDTRteTVVZrQckPIuftLjkMp0fQtKotCEvKmOQU5PZNtRgDGpWcWQng3KWPItVZyedXB36j1Dot9VLMtDQjz3QHNDIBdKrkew_Lu36o8cXyT-pxM3o8nw4oxgHU4kzsDUsDON3zH43PpYn8VfvFPJpxHosMJ7OS37gE5n6SWsayr7g8aevHGufVVxH0kQ7ugtUNpB9lR-EUqitkBV2Rw1Rs">
+</div>
+<div class="bg-secondary p-8 rounded-3xl text-white">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined">clinical_notes</span>
+<h4 class="text-xl font-bold">Experience Zone</h4>
+</div>
+<p class="text-sm text-white/70">장비별 시뮬레이션을 통해 실제 임상 환경에서의 사용감을 실감나게 테스트할 수 있습니다.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f7f9fb] dark:bg-[#001b40] w-full py-16 px-8 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-1">
+<div class="text-lg font-bold text-[#b80049] mb-6">Clinical Radiance</div>
+<p class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-6">
+                        2026 의료기기 글로벌 교육·훈련 지원사업<br>Excellence in Aesthetic Medical Education.
+                    </p>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-primary">public</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-primary">mail</span>
+</div>
+</div>
+</div>
+<div>
+<h5 class="text-[#003176] dark:text-[#f7f9fb] font-bold mb-6">Partners</h5>
+<ul class="space-y-4">
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">KSAPS</li>
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">VSAPS</li>
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">Bundang SNU Hospital</li>
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">175 Military Hospital</li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#003176] dark:text-[#f7f9fb] font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4">
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">Terms of Service</li>
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">Privacy Policy</li>
+<li class="text-[#b80049] font-semibold text-sm cursor-pointer">전체 일정 보기</li>
+<li class="text-sm text-slate-500 hover:text-[#b80049] cursor-pointer transition-colors">Global Partners</li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#003176] dark:text-[#f7f9fb] font-bold mb-6">Support</h5>
+<button class="w-full bg-primary text-white py-3 rounded-full font-bold mb-4 hover:opacity-90 transition-all">문의하기</button>
+<div class="text-xs text-slate-400">Email: contact@clinicalradiance.kr<br>Tel: +82 2-XXXX-XXXX</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-['Plus_Jakarta_Sans'] text-sm text-slate-400">© 2024 Clinical Radiance. Excellence in Aesthetic Medical Education.</div>
+<div class="flex gap-8">
+<img alt="Partner Logo" class="h-8 opacity-40 grayscale" data-alt="minimalist logo for Korean Society of Aesthetic Plastic Surgeons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrT3pr7odofSJI5OvxaLPSEYUECfU6ONCbxbjcKwHKm5JVAnCp84J0MCEjwaMhRYxmcyTw8q_TIfNJL4Dy_oYs0LINdogndINQQPHdYgaXCSOG7agolYN7Z-YbOmN-U4CCW1PvcSx5VpFMqm8cqa2zRxGa5it09euYdhsEaRYwIjociW9N8PJQ_7XX6koaHEn58rtGKyFyrnC1wJbX1zaIovfYDED-YWpU6AUzbRuOBtpMQzFXgFJOc4CppVUuPypDxkQ0B9LmsvY">
+<img alt="Partner Logo" class="h-8 opacity-40 grayscale" data-alt="minimalist logo for Vietnam Society of Aesthetic Plastic Surgeons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj3UtoPvhojeHZbm-8vqmF-T8-J_ye6PI25a8RmQ8zeAvLKgPMhbZfuqnlNmZOknIQJqWTDxMuOwk50LS6sd4035D90jmIsRN14or6DUGbDRA0n6ILKCxy2n66_nQlWIVCVXSspcHv8FgZNBQv5lEhvzfjzUMdpsHPLxsg0pr0k8P3GUZE9tlKLCd8DswIakfdsNNSLqQDyKdPZnGbjoafJsIydGQoQP-Uk5i_Jx9TKnI9V9ZItrhQkm1jXAoC5hC72ZDMSA4vF18">
+<img alt="Partner Logo" class="h-8 opacity-40 grayscale" data-alt="minimalist logo for Seoul National University Hospital" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7HPQ-J7XW9ADdDV0y4zO3HV8odgjpX5l_bMoAGonS8QcvbjcuYyBUekl2j1mj_gHu7Pl2i40qrgWIrynNACt5zx67eMtd7QoE8YhnkIdP6jbDEa-QofkC1mI34OGnG3Oc9MzLNeACXDP2JBwXM6lN3pA7cllWaMK5ng5yNv0pqVaKDQpdFi1_0evtCOBGrt5ulCzB8TCWJz9zczVhJAZzHnFK2gAzS6MrflNxB33-MhzEx8z2FeCqIsh2OejsT5Fiu_dRQor8u3M">
+</div>
+</div>
+</div>
+</footer>
+</body></html>

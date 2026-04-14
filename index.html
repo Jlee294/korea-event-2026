@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>K-Medical 2026 — KSAPS-VSAPS Global KOL Exchange & Summer Camp</title>
+  <meta name="description" content="2026년 KSAPS-VSAPS 글로벌 KOL 교류 행사 및 K-Medical 서머캠프. The official Korean medical device global KOL partnership event in Vietnam 2026.">
+  <meta name="keywords" content="K-Medical, KSAPS, VSAPS, KOL, medical device, Korea, Vietnam, 2026, aesthetic, surgery, summer camp">
+  <meta name="author" content="K-Medical Global">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="K-Medical 2026 — Global KOL Exchange">
+  <meta property="og:description" content="Official partnership event for Korean KOL practitioners and Vietnamese medical community. Ho Chi Minh & 175 Military Hospital, 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/hero-bg.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="navbar" class="navbar glass" role="navigation" aria-label="Main navigation">
+  <div class="navbar-inner">
+
+    <!-- Brand -->
+    <a href="#hero" class="nav-brand" aria-label="K-Medical 2026 Home">
+      <img src="./images/logo.png"
+           alt="K-Medical 2026 Logo"
+           class="nav-logo"
+           onerror="this.style.display='none'">
+      <span class="nav-title">K-Medical 2026</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#about" id="nav-link-program" data-i18n="nav-program">Program</a></li>
+      <li><a href="#events" id="nav-link-speakers" data-i18n="nav-speakers">Speakers</a></li>
+      <li><a href="#pavilion" id="nav-link-venues" data-i18n="nav-venues">Venues</a></li>
+      <li><a href="#registration" id="nav-link-about" data-i18n="nav-about">About</a></li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <!-- Language Toggle -->
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn" data-lang="ko" aria-label="한국어">한국어</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a href="#registration" class="btn-register" data-i18n="nav-register">Register</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="nav-mobile" class="nav-mobile" role="menu">
+    <a href="#about" role="menuitem" data-i18n="nav-program">Program</a>
+    <a href="#events" role="menuitem" data-i18n="nav-speakers">Speakers</a>
+    <a href="#pavilion" role="menuitem" data-i18n="nav-venues">Venues</a>
+    <a href="#registration" role="menuitem" data-i18n="nav-about">About</a>
+    <a href="#registration" role="menuitem" data-i18n="nav-register">Register</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<header id="hero" class="hero" role="banner">
+
+  <!-- Background -->
+  <div class="hero-bg">
+    <img src="./images/hero-bg.jpg"
+         alt="Seoul skyline at night — K-Medical Global 2026"
+         loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="hero-content">
+
+    <!-- Left Column -->
+    <div>
+      <div class="hero-badge">
+        <span class="badge badge-secondary" data-i18n="hero-badge">Global KOL Partnership 2026</span>
+      </div>
+
+      <h1 class="hero-title animate-fade-up">
+        <span data-i18n="hero-title-1">KSAPS-VSAPS 글로벌 KOL</span><br>
+        <span data-i18n="hero-title-2">교류 행사 &amp; K-Medical</span><br>
+        <span class="highlight" data-i18n="hero-title-highlight">서머캠프 2026</span>
+      </h1>
+
+      <p class="hero-desc animate-fade-up anim-delay-1" data-i18n="hero-desc">
+        한국 KOL 의료진의 고급 술기 및 국산 의료기기를 현지 의료진에게 전파하는 공식 파트너십 행사입니다.
+      </p>
+
+      <div class="hero-ctas animate-fade-up anim-delay-2">
+        <a href="#registration" class="btn-primary-hero" id="btn-hero-register" data-i18n="hero-cta-register">사전 등록하기</a>
+        <a href="#events" class="btn-outline-hero" id="btn-hero-program" data-i18n="hero-cta-program">프로그램 자세히 보기</a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats animate-fade-up anim-delay-3">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="6" data-suffix="+">6+</span>
+          <span class="hero-stat-label" data-i18n="stat-1-label">참여 브랜드</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="20" data-suffix="+">20+</span>
+          <span class="hero-stat-label" data-i18n="stat-2-label">KOL 연사</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="2">2</span>
+          <span class="hero-stat-label" data-i18n="stat-3-label">2026 행사 수</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Glass Card -->
+    <aside class="hero-card glass" aria-label="Event countdown card">
+      <div class="hero-card-header">
+        <div class="hero-card-icon">
+          <span class="material-symbols-outlined" aria-hidden="true">event_available</span>
+        </div>
+        <div>
+          <div class="hero-card-label" data-i18n="hero-next-label">Next Event</div>
+          <div class="hero-card-date" data-i18n="hero-next-date">2026.08.28 Ho Chi Minh</div>
+        </div>
+      </div>
+
+      <div class="hero-card-progress">
+        <div class="progress-label" data-i18n="hero-progress-label">Registration Open</div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="progress-note" data-i18n="hero-progress-note">임상 좌석 75% 예약 완료</div>
+      </div>
+    </aside>
+
+  </div>
+</header>
+
+<!-- ============================================================
+     ABOUT / 4-STEP SECTION
+     ============================================================ -->
+<section id="about" class="about" aria-labelledby="about-heading">
+  <div class="container">
+
+    <div class="about-header">
+      <div>
+        <p class="section-subheading" data-i18n="about-tag">About Project</p>
+        <h2 id="about-heading" class="section-heading reveal" data-i18n="about-title">
+          실질적인 수출 성과 창출 및<br>K-Medical Standard 구축
+        </h2>
+      </div>
+      <p class="about-desc reveal" data-i18n="about-desc">
+        글로벌 교류를 통해 한국의 의료 기술 리더십을 확립하고, 검증된 국산 의료기기의 세계 시장 진출을 가속화합니다.
+      </p>
+    </div>
+
+    <!-- 4-Step Grid -->
+    <div class="steps-grid">
+
+      <!-- Step 1 -->
+      <article class="step-card border-primary reveal anim-delay-1" aria-label="Step 1">
+        <div class="step-number" style="color: var(--primary);" aria-hidden="true">01</div>
+        <div class="step-icon bg-primary">
+          <span class="material-symbols-outlined" aria-hidden="true">school</span>
+        </div>
+        <h3 class="step-title" style="color: var(--primary);" data-i18n="step-1-title">[강의] 이론적 신뢰</h3>
+        <p class="step-desc" data-i18n="step-1-desc">
+          한국 최고의 KOL들이 전하는 최신 미용성형 지식과 이론적 기반 구축 (Trust).
+        </p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="step-card border-secondary reveal anim-delay-2" aria-label="Step 2">
+        <div class="step-number" style="color: var(--secondary);" aria-hidden="true">02</div>
+        <div class="step-icon bg-secondary">
+          <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+        </div>
+        <h3 class="step-title" style="color: var(--secondary);" data-i18n="step-2-title">[데모] 시각적 증명</h3>
+        <p class="step-desc" data-i18n="step-2-desc">
+          UHD 초고화질 실시간 중계를 통한 정교한 술기 시연 및 시각적 입증 (Visualizing).
+        </p>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="step-card border-tertiary reveal anim-delay-3" aria-label="Step 3">
+        <div class="step-number" style="color: var(--tertiary);" aria-hidden="true">03</div>
+        <div class="step-icon bg-tertiary">
+          <span class="material-symbols-outlined" aria-hidden="true">touch_app</span>
+        </div>
+        <h3 class="step-title" style="color: var(--tertiary);" data-i18n="step-3-title">[전시] 직접 확인</h3>
+        <p class="step-desc" data-i18n="step-3-desc">
+          K-Innovation 전시관에서 장비의 성능과 디자인을 직접 확인하는 기회 (Touching).
+        </p>
+      </article>
+
+      <!-- Step 4 -->
+      <article class="step-card border-primary-container reveal anim-delay-4" aria-label="Step 4">
+        <div class="step-number" style="color: var(--primary-container);" aria-hidden="true">04</div>
+        <div class="step-icon bg-primary-container">
+          <span class="material-symbols-outlined" aria-hidden="true">handshake</span>
+        </div>
+        <h3 class="step-title" style="color: var(--primary-container);" data-i18n="step-4-title">[핸즈온] 체득 구매</h3>
+        <p class="step-desc" data-i18n="step-4-desc">
+          직접적인 장비 조작 경험을 통한 구매 전환 및 실질적 비즈니스 체결 (Closing).
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EVENTS SCHEDULE
+     ============================================================ -->
+<section id="events" class="events" aria-labelledby="events-heading">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="events-title-wrap">
+      <p class="section-subheading" data-i18n="events-tag">주요 행사 일정</p>
+      <h2 id="events-heading" class="section-heading reveal">Key Events Schedule</h2>
+      <div class="divider"></div>
+    </div>
+
+    <!-- ---- Event 1 ---- -->
+    <div class="event-block reveal">
+
+      <!-- Event Card -->
+      <article class="event-card bg-primary" aria-labelledby="event1-heading">
+        <div>
+          <div class="event-tag color-secondary-fixed" data-i18n="event1-tag">Event 01</div>
+          <h3 id="event1-heading" class="event-title" data-i18n="event1-title">
+            VSAPS-KSAPS 서머캠프 + 미디어 컨퍼런스
+          </h3>
+          <div class="event-meta">
+            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+            <span data-i18n="event1-date">2026.08.28 – 08.30</span>
+          </div>
+          <div class="event-meta">
+            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <span data-i18n="event1-loc">호치민, 베트남</span>
+          </div>
+        </div>
+        <img src="./images/event1-hcm.jpg"
+             alt="Ho Chi Minh City at night"
+             class="event-img"
+             loading="lazy"
+             onerror="this.style.display='none'">
+      </article>
+
+      <!-- Features -->
+      <div class="event-features cols-3">
+
+        <div class="feature-card centered reveal anim-delay-1">
+          <div class="feature-icon-wrap-lg">
+            <span class="material-symbols-outlined" aria-hidden="true">mic</span>
+          </div>
+          <h4 class="feature-title" data-i18n="feat1-1-title">미디어 컨퍼런스</h4>
+          <p class="feature-desc" data-i18n="feat1-1-desc">
+            글로벌 미디어 대상 K-Medical 비전 선포 및 브랜드 강화
+          </p>
+        </div>
+
+        <div class="feature-card centered reveal anim-delay-2">
+          <div class="feature-icon-wrap-lg">
+            <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
+          </div>
+          <h4 class="feature-title" data-i18n="feat1-2-title">고급 워크숍</h4>
+          <p class="feature-desc" data-i18n="feat1-2-desc">
+            심도 있는 학술 토론 및 전문 술기 심화 교육 세션
+          </p>
+        </div>
+
+        <div class="feature-card centered reveal anim-delay-3">
+          <div class="feature-icon-wrap-lg">
+            <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
+          </div>
+          <h4 class="feature-title" data-i18n="feat1-3-title">핸즈온 세션</h4>
+          <p class="feature-desc" data-i18n="feat1-3-desc">
+            현지 의료진이 직접 장비를 다뤄보는 실습 중심 프로그램
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---- Event 2 ---- -->
+    <div class="event-block reveal" style="direction: initial;">
+
+      <!-- Features first on mobile, card first on desktop via CSS order -->
+      <div class="event-features cols-2" style="order: 1;">
+
+        <div class="feature-card reveal anim-delay-1">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined" aria-hidden="true">videocam</span>
+          </div>
+          <div>
+            <h4 class="feature-title" data-i18n="feat2-1-title">Live Demo (UHD)</h4>
+            <p class="feature-desc" data-i18n="feat2-1-desc">
+              초고해상도 실시간 중계를 통한 수술실 상황 생생 전달
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal anim-delay-2">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined" aria-hidden="true">hub</span>
+          </div>
+          <div>
+            <h4 class="feature-title" data-i18n="feat2-2-title">B2B 매칭</h4>
+            <p class="feature-desc" data-i18n="feat2-2-desc">
+              제조사와 현지 바이어 간의 1:1 비즈니스 상담 및 계약 지원
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal anim-delay-3">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined" aria-hidden="true">featured_play_list</span>
+          </div>
+          <div>
+            <h4 class="feature-title" data-i18n="feat2-3-title">K-Innovation 전시</h4>
+            <p class="feature-desc" data-i18n="feat2-3-desc">
+              최첨단 의료기기 신제품 라인업 통합 전시
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal anim-delay-4">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+          </div>
+          <div>
+            <h4 class="feature-title" data-i18n="feat2-4-title">학술 세션</h4>
+            <p class="feature-desc" data-i18n="feat2-4-desc">
+              전문가 그룹의 학술 교류 및 임상 사례 공유
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Event Card -->
+      <article class="event-card bg-tertiary" aria-labelledby="event2-heading" style="order: 0;">
+        <div>
+          <div class="event-tag color-tertiary-dim" data-i18n="event2-tag">Event 02</div>
+          <h3 id="event2-heading" class="event-title" data-i18n="event2-title">
+            KSAPS-VSAPS KOL 교류 행사
+          </h3>
+          <div class="event-meta">
+            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+            <span data-i18n="event2-date">2026.10.30 – 11.01</span>
+          </div>
+          <div class="event-meta">
+            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <span data-i18n="event2-loc">175군병원, 베트남</span>
+          </div>
+        </div>
+        <img src="./images/event2-hospital.jpg"
+             alt="175 Military Hospital, Vietnam"
+             class="event-img"
+             loading="lazy"
+             onerror="this.style.display='none'">
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     K-INNOVATION PAVILION
+     ============================================================ -->
+<section id="pavilion" class="pavilion" aria-labelledby="pavilion-heading">
+  <div class="container">
+
+    <div class="pavilion-header">
+      <p class="section-subheading" data-i18n="pavilion-tag">K-Innovation 전시관</p>
+      <h2 id="pavilion-heading" class="section-heading reveal" data-i18n="pavilion-title">K-Innovation Pavilion</h2>
+      <p class="about-desc reveal" style="margin-top: 0.75rem;" data-i18n="pavilion-desc">
+        세계가 주목하는 대한민국 대표 의료기기 브랜드를 한자리에서 만나보십시오.
+      </p>
+    </div>
+
+    <div class="pavilion-layout">
+
+      <!-- Brand Grid -->
+      <div class="brand-grid reveal">
+        <div class="brand-card">
+          <div class="brand-name">Hironic</div>
+          <span class="brand-product">DOUBLO</span>
+        </div>
+        <div class="brand-card">
+          <div class="brand-name">Wontech</div>
+          <span class="brand-product">Oligio</span>
+        </div>
+        <div class="brand-card">
+          <div class="brand-name">NeoDoctor</div>
+          <span class="brand-product">JAMBER</span>
+        </div>
+        <div class="brand-card">
+          <div class="brand-name">AesthePharm</div>
+          <span class="brand-product">QTFILL</span>
+        </div>
+        <div class="brand-card">
+          <div class="brand-name">RoseLab</div>
+          <span class="brand-product">BIOSTER</span>
+        </div>
+        <div class="brand-card">
+          <div class="brand-name">Osstem</div>
+          <span class="brand-product">Pharma</span>
+        </div>
+      </div>
+
+      <!-- Zone Cards -->
+      <div class="zone-cards reveal">
+
+        <!-- K-Master Zone -->
+        <div class="zone-card bg-primary">
+          <div class="zone-header">
+            <span class="material-symbols-outlined" aria-hidden="true">desktop_windows</span>
+            <h3 class="zone-title" data-i18n="kmaster-title">K-Master Zone</h3>
+          </div>
+          <p class="zone-desc" data-i18n="kmaster-desc">
+            Digital Wall을 통해 브랜드 히스토리와 기술력을 한눈에 체험하는 미디어 갤러리 존입니다.
+          </p>
+          <img src="./images/kmaster-zone.jpg"
+               alt="K-Master Zone digital gallery"
+               class="zone-img"
+               loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+
+        <!-- Experience Zone -->
+        <div class="zone-card bg-secondary">
+          <div class="zone-header">
+            <span class="material-symbols-outlined" aria-hidden="true">clinical_notes</span>
+            <h3 class="zone-title" data-i18n="exp-zone-title">Experience Zone</h3>
+          </div>
+          <p class="zone-desc" data-i18n="exp-zone-desc">
+            장비별 시뮬레이션을 통해 실제 임상 환경에서의 사용감을 실감나게 테스트할 수 있습니다.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REGISTRATION CTA
+     ============================================================ -->
+<section id="registration" class="registration" aria-labelledby="reg-heading">
+  <div class="container">
+    <div class="registration-inner">
+
+      <p class="section-subheading" style="color: rgba(255,255,255,0.7);" data-i18n="reg-tag">사전 등록</p>
+      <h2 id="reg-heading" class="registration-title reveal" data-i18n="reg-title">
+        K-Medical 글로벌 네트워크에 합류하세요
+      </h2>
+      <p class="registration-desc reveal anim-delay-1" data-i18n="reg-desc">
+        지금 등록하여 2026년 K-Medical 글로벌 KOL 교류 행사에 참여하세요. 임상 좌석이 한정되어 있습니다.
+      </p>
+
+      <form id="reg-form" class="registration-form reveal anim-delay-2" novalidate>
+        <input
+          type="email"
+          id="reg-email"
+          name="email"
+          required
+          autocomplete="email"
+          data-i18n="reg-input-placeholder"
+          placeholder="이메일 주소를 입력해 주세요"
+          class="registration-input"
+          aria-label="Email address">
+        <button type="submit" class="btn-submit" data-i18n="reg-btn">사전 등록</button>
+      </form>
+
+      <p class="registration-note reveal anim-delay-3" data-i18n="reg-note">
+        무료 등록 · 스팸 없음 · 언제든지 취소 가능
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div>
+        <div class="footer-brand-name">K-Medical Global</div>
+        <p class="footer-brand-desc" data-i18n="footer-brand-desc">
+          2026 의료기기 글로벌 교육·훈련 지원사업<br>미용성형 의학 교육의 탁월함.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Website">
+            <span class="material-symbols-outlined" aria-hidden="true">public</span>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Email">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Partners -->
+      <div>
+        <h5 class="footer-col-title" data-i18n="footer-partners">Partners</h5>
+        <ul class="footer-links">
+          <li data-i18n="partner-ksaps">KSAPS</li>
+          <li data-i18n="partner-vsaps">VSAPS</li>
+          <li data-i18n="partner-bundang">분당서울대학교병원</li>
+          <li data-i18n="partner-175">175군병원 (베트남)</li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h5 class="footer-col-title" data-i18n="footer-links">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="link-terms">이용약관</a></li>
+          <li><a href="#" data-i18n="link-privacy">개인정보처리방침</a></li>
+          <li><a href="#events" class="highlight" data-i18n="link-schedule">전체 일정 보기</a></li>
+          <li><a href="#" data-i18n="link-global">글로벌 파트너</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h5 class="footer-col-title" data-i18n="footer-support">Support</h5>
+        <a href="mailto:contact@kmedical2026.com">
+          <button class="btn-contact" data-i18n="btn-contact">문의하기</button>
+        </a>
+        <div class="footer-contact-info">
+          Email: contact@kmedical2026.com<br>
+          Tel: +82 2-XXXX-XXXX
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="footer-copy">
+        © 2026 K-Medical Global. 미용성형 의학 교육의 탁월함.
+      </span>
+      <div class="footer-partner-logos">
+        <img src="./images/logo.png"
+             alt="KSAPS"
+             onerror="this.style.display='none'"
+             loading="lazy">
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="./js/main.js" defer></script>
+
+</body>
+</html>
